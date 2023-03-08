@@ -21,6 +21,10 @@ router.get('/signUp.html', async (req, res) => {
     res.sendFile(path.join(__dirname,"../../public/pages/signUp.html"))
 })
 
+router.get('/myAccount.js', async (req, res) => {
+    res.sendFile(path.join(__dirname,"../../public/js/myAccount.js"))
+})
+
 router.get('/myAccount.html', async (req, res) => {
     res.sendFile(path.join(__dirname,"../../public/pages/myAccount.html"))
 })
