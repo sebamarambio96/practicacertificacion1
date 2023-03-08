@@ -1,6 +1,6 @@
 //Cars
 function renderCars() {
-    fetch(`http://localhost:3000/all`)
+    fetch(`https://skate.up.railway.app/all`)
         .then((resp) => resp.json())
         .then(data => {
             console.log(data)
@@ -53,7 +53,7 @@ function checkbox() {
             const data = {
                 status:btn.checked
             }
-            fetch(`http://localhost:3000/admin/${btn.dataset.id}`, {
+            fetch(`https://skate.up.railway.app/admin/${btn.dataset.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json',

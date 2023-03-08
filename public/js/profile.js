@@ -1,6 +1,6 @@
 let tokenP = JSON.parse(localStorage.getItem('token'))
 
-fetch(`http://localhost:3000/profile`, {
+fetch(`https://skate.up.railway.app/profile`, {
     method: 'GET',
     headers: {
         'Content-type': 'application/json',
@@ -57,7 +57,7 @@ function modifyProfile() {
                     text: 'Debes rellenar todos los campos!'
                 })
             } else {
-                fetch(`http://localhost:3000/profile`, {
+                fetch(`https://skate.up.railway.app/profile`, {
                     method: 'POST',
                     headers: {
                         'Content-type': 'application/json',
@@ -95,7 +95,7 @@ function deleteSend() {
     btn.addEventListener('click', (e) => {
         e.preventDefault()
         let token = JSON.parse(localStorage.getItem('token'))
-        fetch(`http://localhost:3000/profile/`, {
+        fetch(`https://skate.up.railway.app/profile/`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json',

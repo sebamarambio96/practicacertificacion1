@@ -17,7 +17,7 @@ function login() {
                 text: 'Debes rellenar todos los campos!'
             })
         } else {
-            fetch(`http://localhost:3000/login/`, {
+            fetch(`https://skate.up.railway.app/login/`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

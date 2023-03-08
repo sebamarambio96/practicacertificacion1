@@ -2,7 +2,7 @@ const containerForm = document.getElementById('containerForm')
 const fragmentForm = document.createDocumentFragment()
 //Cars
 function renderCars() {
-    fetch(`http://localhost:3000/all`)
+    fetch(`https://skate.up.railway.app/all`)
         .then((resp) => resp.json())
         .then(data => {
             console.log(data)

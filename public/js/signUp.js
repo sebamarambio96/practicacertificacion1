@@ -33,7 +33,7 @@ function register() {
                     text: 'Debes rellenar todos los campos!'
                 })
             } else {
-                const res = await fetch(`http://localhost:3000/register/`, {
+                const res = await fetch(`https://skate.up.railway.app/register/`, {
                     method: 'POST',
                     headers: {
                         "Accept": "application/json"
