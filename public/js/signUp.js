@@ -48,6 +48,7 @@ function register() {
                         title: 'Genial!',
                         text: `Te has registrado correctamente`
                     })
+                    window.location.href = "/index.html"
                 } else {
                     if (res.status >= 400 || res.status < 500) {
                         Swal.fire({
