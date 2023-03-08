@@ -34,7 +34,7 @@ function login() {
                             title: 'Genial!',
                             text: `Has ingresado correctamente`
                         })
-                        window.location.href = "/index.html"
+                        location.href = "/index.html"
                     } else {
                         Swal.fire({
                             icon: 'error',
