@@ -1,0 +1,14 @@
+{
+"id_user": 2,
+"brand": "lambo",
+"model":"gallardo",
+"year":60,
+"imgUrl": "null"
+}
+
+
+
+{
+"username": "Seba1",
+"password": "1234556"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Paz</title>
+    <!-- <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="../js/signUp.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class=" bg-warning">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin.html">Administrador</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container" id="loginContainer">
+                <!-- MY ACCOUNT / LOGIN -->
+                <a href="./pages/login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-50 container-fluid  d-flex flex-column align-items-center">
+        <h1 class="text-center text-black">Skate Park</h1>
+        <h2 class="text-center text-black">Registro</h2>
+        <form class="formLogin w-75 d-flex flex-column align-items-center">
+            <h1 class="h3 mb-3 fw-normal text-dark">Ingrese sus datos:</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="d-flex listaLogin text-dark ">Email</p>
+                        <input class="form-control" id="email">
+    
+                    <p class="d-flex listaLogin text-dark ">Password</p>
+                        <input type="password" class="form-control" id="password">
+
+                    <p class="d-flex listaLogin text-dark ">Años de experiencia</p>
+                        <input type="number" class="form-control" id="yearexp">
+                </div>
+                <div class="col-md-6">
+                    <p class="d-flex listaLogin text-dark ">Nombre</p>
+                        <input type="text"class="form-control" id="name">
+
+                    <p class="d-flex listaLogin text-dark ">Repita la password</p>
+                        <input type="password" class="form-control" id="password2">
+
+                    <p class="d-flex listaLogin text-dark ">Especialidad</p>
+                        <input type="text" class="form-control" id="specialty">
+                </div>
+                <div class="m-3  d-flex flex-column align-items-center">
+                    <label for="profileImg" class=" fw-bold my-2">Foto de perfil</label>
+                    <Input type="file" name="profileImg" id="profileImg" accept="image/*">
+                </div>
+
+            </div>
+            <div class="w-50  d-flex flex-column align-items-center">
+                <button class="w-100 btn btn-info text-white" id="btnSendRegister" type="button">Registrarme</button>
+            </div>
+
+        </form>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

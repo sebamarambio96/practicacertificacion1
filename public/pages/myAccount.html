@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Paz</title>
+    <!-- <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <script defer src="../js/preCartPages.js"></script> -->
+    <script defer src="../js/profile.js"></script>
+    <script defer src="../js/MyAccount.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class=" bg-warning">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin.html">Administrador</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container" id="loginContainer">
+                <!-- MY ACCOUNT / LOGIN -->
+                <a href="./pages/login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-75 container-fluid  d-flex flex-column align-items-center">
+        <h1 class="text-center text-black">Skate Park</h1>
+        <h2 class="text-center text-black">Datos del perfil</h2>
+        <form class="formLogin w-100 d-flex flex-column align-items-center">
+            <hr>
+            <div class="row w-50">
+                <div class="col-md-6">
+                    <fieldset disabled>
+                        <p class="d-flex listaLogin text-dark ">Email</p>
+                        <input class="form-control" id="email">
+                    </fieldset>
+
+                    <p class="d-flex listaLogin text-dark ">Password</p>
+                    <input type="password" class="form-control" id="password">
+
+                    <p class="d-flex listaLogin text-dark ">Años de experiencia</p>
+                    <input type="number" class="form-control" id="yearexp">
+                </div>
+                <div class="col-md-6">
+                    <p class="d-flex listaLogin text-dark ">Nombre</p>
+                    <input type="text" class="form-control" id="name">
+
+                    <p class="d-flex listaLogin text-dark ">Repita la password</p>
+                    <input type="password" class="form-control" id="password2">
+
+                    <p class="d-flex listaLogin text-dark ">Especialidad</p>
+                    <input type="text" class="form-control" id="specialty">
+                </div>
+
+            </div>
+            <div class="w-25 d-flex flex-column align-items-center mt-3">
+                <button class="w-100 btn btn-primary text-white m-2" id="btnSendProfile"
+                    type="button">Actualizar</button>
+                <button class="w-100 btn btn-danger text-white m-2" id="btnDeleteProfile" type="button">Eliminar
+                    cuenta</button>
+            </div>
+
+        </form>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+<!-- MY ACCOUNT -->
+<template id="templateMA">
+    <div class="dropdown botonLogin">
+        <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Mi cuenta
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><button class="dropdown-item text-danger" id="signOut" type="button" href="#">Cerrar sesión</button>
+            </li>
+        </ul>
+    </div>
+</template>
+<!-- btnLogin -->
+<template id="templateBtnLogin">
+    <a href="./login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
+</template>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>
